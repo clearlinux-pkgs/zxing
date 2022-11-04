@@ -4,7 +4,7 @@
 #
 Name     : zxing
 Version  : 1.4.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/nu-book/zxing-cpp/archive/v1.4.0/zxing-cpp-1.4.0.tar.gz
 Source0  : https://github.com/nu-book/zxing-cpp/archive/v1.4.0/zxing-cpp-1.4.0.tar.gz
 Source1  : https://github.com/nothings/stb/archive/8b5f1f37b5b75829fc72d38e7b5d4bcbf8a26d55/stb-8b5f1f3.tar.gz
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1667519804
+export SOURCE_DATE_EPOCH=1667520352
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -93,7 +93,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 cd clr-build; make test
 
 %install
-export SOURCE_DATE_EPOCH=1667519804
+export SOURCE_DATE_EPOCH=1667520352
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/zxing
 cp %{_builddir}/stb-8b5f1f37b5b75829fc72d38e7b5d4bcbf8a26d55/LICENSE %{buildroot}/usr/share/package-licenses/zxing/b725e4c292b2ad7fdcc0747c986495176f99cdb3
